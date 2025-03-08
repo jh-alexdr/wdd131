@@ -8,6 +8,9 @@
     <meta name="description"
         content="WDD 131 - Dynamic Web Fundamentals - Jhon Tobar - Keyword summary of page content">
     <meta name="author" content="Jhon A. Tobar">
+    <link rel="stylesheet" href="base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="getdates.js" defer></script>
 </head>
 
 <body>
@@ -52,13 +55,9 @@
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="2025"></span> Jhon A. Tobar, Quito-Ecuador.</p>
+        <p>&copy; <span id="currentyear"></span> Jhon A. Tobar, Quito-Ecuador.</p>
         <p id="lastModified"></p>
     </footer>
-    <script>
-        document.getElementById('currentyear').textContent = new Date().getFullYear();
-        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
-    </script>
 </body>
 
 </html>

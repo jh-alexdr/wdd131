@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WWDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Jhon A. Tobar</title>
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals - Jhon Tobar - Keyword summary of page content">
+    <meta name="author" content="Jhon A. Tobar">
 </head>
+
 <body>
-    <h1>WDD 131 - jh-alexdr</h1>
-    
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Jhon A. Tobar </h1>
+        <nav>
+            <ul>
+                <li><a href="www.linkedin.com/in/jhon-tobar-a0188b298">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=eng&id=p26#p26">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/LinkedIn Image.jpeg" alt="Jhon A. Tobar">
+            <p>My name is Jhon A. Tobar T. I was born in Quito, Ecuador. I currently work as an online English language
+                instructor. I
+                really enjoy learning new things, such as aspects relevant to technology, and I also spend time with
+                family and friends
+                in recreational and inspiring activities.</p>
+        </section>
+        <section class="card">
+            <h2>Quito, Ecuador</h2>
+            <img src="images/Quito-Ecuador.jpeg" alt="City">
+            <p>Quito is the capital city of Ecuador, known for its well-preserved colonial center and rich history. It
+                is located high in the Andes mountains and is one of the highest capital cities in the world.</p>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="2025"></span> Jhon A. Tobar, Quito-Ecuador.</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        document.getElementById('lastModified').textContent = 'Last Modified: ' + document.lastModified;
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,43 @@
+/* Use the Google Font – Roboto in the body rule */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Common styles for header, main, and footer */
+header, main, footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    background-color: #e0e7ff; /* Blueish background color */
+}
+
+/* Header specific styles */
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Main element as a CSS grid */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+/* Section elements styles */
+section {
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+/* Footer specific styles */
+footer {
+    text-align: center;
+    background-color: #b3c7f9; /* Lighter blueish background color */
+}/* Use the Google Font – Roboto in the body rule */

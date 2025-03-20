@@ -1,21 +1,18 @@
-/* Adjust grid layout for larger screens */
-main figure {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 24px;
-}
+/* Apply styles for larger screens using a media query */
+@media (min-width: 768px) {
+    main figure {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 24px;
+    }
 
-/* Adjust navigation for larger screens */
-nav ul {
-    justify-content: center;
-    gap: 1rem;
-}
+    nav ul {
+        justify-content: center;
+        gap: 1rem;
+        display: flex !important;
+        flex-direction: row;
+    }
 
-/* Show navigation and hide hamburger in larger views */
-.hamburger {
-    display: none;
-}
-
-nav ul {
-    display: flex !important;
-    flex-direction: row;
+    .hamburger {
+        display: none;
+    }
 }

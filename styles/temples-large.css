@@ -1,10 +1,18 @@
 /* Apply styles for larger screens using a media query */
 @media (min-width: 767px) {
-    main figure {
-        /* Explicitly set a 3x3 grid layout */
+    main {
+        /* Ensure the main container uses a grid layout */
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 24px;
+    }
+
+    main figure {
+        /* Align items within each figure */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     nav ul {

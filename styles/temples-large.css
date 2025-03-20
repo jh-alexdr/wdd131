@@ -7,6 +7,14 @@
         gap: 24px;
     }
 
+    main h1,
+    main h2 {
+        /* Ensure titles are displayed above the grid */
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
     main figure {
         /* Align items within each figure */
         display: flex;

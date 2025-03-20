@@ -1,0 +1,21 @@
+/* Adjust grid layout for larger screens */
+main figure {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+}
+
+/* Adjust navigation for larger screens */
+nav ul {
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Show navigation and hide hamburger in larger views */
+.hamburger {
+    display: none;
+}
+
+nav ul {
+    display: flex !important;
+    flex-direction: row;
+}

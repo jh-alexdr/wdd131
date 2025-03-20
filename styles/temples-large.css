@@ -1,7 +1,9 @@
 /* Apply styles for larger screens using a media query */
 @media (min-width: 767px) {
     main figure {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Explicitly set a 3x3 grid layout */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         gap: 24px;
     }
 

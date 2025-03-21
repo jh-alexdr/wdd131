@@ -15,16 +15,18 @@
     --subtitle-font-size: 1.2rem;
     --footer-font-size: 0.8rem;
     --footer-height: 50px;
-    --data-bg-color: #004d40;
-    /* Dark green */
-    --data-text-color: #ffffff;
+    --data-bg-color: #0033A0;
+    /* Blue (Ecuador flag) */
+    --data-text-color: #FFD100;
+    /* Yellow (Ecuador flag) */
+    --weather-bg-color: #CE1126;
+    /* Red (Ecuador flag) */
+    --weather-text-color: #fff;
     /* White */
-    --weather-bg-color: #00695c;
-    /* Teal */
-    --weather-text-color: #ffffff;
-    /* White */
-    --font-family-heading: 'Georgia', serif;
+    --font-family-heading: 'Times New Roman', serif;
+    /* Elegant font for headings */
     --font-family-body: 'Arial', sans-serif;
+    /* Clean font for body */
 }
 
 body {
@@ -49,10 +51,10 @@ header {
 }
 
 .hero img {
-    width: 80%;
+    width: 90%;
     /* Large centered image */
     height: auto;
-    margin: 0 auto;
+    margin: 1rem auto;
     display: block;
     border-radius: var(--card-border-radius);
     object-fit: cover;
@@ -70,6 +72,7 @@ main {
     grid-template-rows: auto 1fr;
     gap: 1rem;
     padding: 1rem;
+    align-items: start;
 }
 
 .data {
@@ -81,14 +84,16 @@ main {
     border-radius: var(--card-border-radius);
     box-shadow: var(--card-shadow);
     font-family: var(--font-family-heading);
-    font-size: var(--subtitle-font-size);
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
 .data h2 {
     margin-top: 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .weather {
@@ -100,14 +105,16 @@ main {
     border-radius: var(--card-border-radius);
     box-shadow: var(--card-shadow);
     font-family: var(--font-family-heading);
-    font-size: var(--subtitle-font-size);
-    line-height: 1.6;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
 .weather h2 {
     margin-top: 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .weather h2::after {

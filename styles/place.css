@@ -15,10 +15,20 @@
     --subtitle-font-size: 1.2rem;
     --footer-font-size: 0.8rem;
     --footer-height: 50px;
+    --data-bg-color: #004d40;
+    /* Dark green */
+    --data-text-color: #ffffff;
+    /* White */
+    --weather-bg-color: #00695c;
+    /* Teal */
+    --weather-text-color: #ffffff;
+    /* White */
+    --font-family-heading: 'Georgia', serif;
+    --font-family-body: 'Arial', sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family-body);
     margin: 0;
     padding: 0;
     color: var(--text-color);
@@ -35,13 +45,18 @@ header {
     padding: 1rem;
     font-size: var(--title-font-size);
     font-weight: bold;
+    font-family: var(--font-family-heading);
 }
 
 .hero img {
-    width: 100%;
+    width: 80%;
+    /* Large centered image */
     height: auto;
+    margin: 0 auto;
+    display: block;
     border-radius: var(--card-border-radius);
     object-fit: cover;
+    box-shadow: var(--card-shadow);
     filter: none;
     /* Ensure no filters are applied */
     image-rendering: auto;
@@ -50,38 +65,49 @@ header {
 
 main {
     flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
     padding: 1rem;
 }
 
-.data,
-.weather {
-    padding: var(--card-padding);
-    margin: 1rem;
-    border: 1px solid var(--secondary-color);
-    border-radius: var(--card-border-radius);
-    background-color: var(--card-background);
-    box-shadow: var(--card-shadow);
-    font-size: var(--subtitle-font-size);
-    line-height: 1.5;
-    width: 40%;
-    /* Adjusted width for better alignment */
-    margin: 0;
-}
-
 .data {
-    float: left;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: var(--data-bg-color);
+    color: var(--data-text-color);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
+    font-family: var(--font-family-heading);
+    font-size: var(--subtitle-font-size);
+    line-height: 1.6;
+}
+
+.data h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .weather {
-    float: right;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: var(--weather-bg-color);
+    color: var(--weather-text-color);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
+    font-family: var(--font-family-heading);
+    font-size: var(--subtitle-font-size);
+    line-height: 1.6;
 }
 
 .weather h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 0;
+    font-size: 1.8rem;
+    text-align: center;
 }
 
 .weather h2::after {
@@ -104,6 +130,7 @@ footer {
     width: 100%;
     height: var(--footer-height);
     z-index: 10;
+    font-family: var(--font-family-body);
 }
 
 footer span {
@@ -127,8 +154,23 @@ footer span {
     }
 
     main {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+    }
+
+    .data {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .weather {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .hero img {
+        width: 100%;
+        /* Adjust image size for smaller screens */
     }
 
     footer {

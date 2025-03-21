@@ -7,6 +7,13 @@
     /* Red */
     --text-color: #000;
     --background-color: #fff;
+    --card-background: #f9f9f9;
+    --card-border-radius: 12px;
+    --card-padding: 1.5rem;
+    --card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --title-font-size: 2.5rem;
+    --subtitle-font-size: 1.2rem;
+    --footer-font-size: 0.8rem;
 }
 
 body {
@@ -22,19 +29,41 @@ header {
     color: var(--text-color);
     text-align: center;
     padding: 1rem;
+    font-size: var(--title-font-size);
+    font-weight: bold;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    border-radius: var(--card-border-radius);
 }
 
 .data,
 .weather {
-    padding: 1rem;
+    padding: var(--card-padding);
     margin: 1rem;
     border: 1px solid var(--secondary-color);
-    border-radius: 8px;
+    border-radius: var(--card-border-radius);
+    background-color: var(--card-background);
+    box-shadow: var(--card-shadow);
+    font-size: var(--subtitle-font-size);
+    line-height: 1.5;
+}
+
+.data {
+    float: left;
+    width: 45%;
+}
+
+.weather {
+    float: right;
+    width: 45%;
+}
+
+.weather h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .weather h2::after {
@@ -46,8 +75,15 @@ footer {
     background-color: var(--accent-color);
     color: var(--background-color);
     text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    font-size: var(--footer-font-size);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span {
+    margin: 0 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -57,5 +93,17 @@ footer {
         display: inline-block;
         width: 24px;
         height: 24px;
+    }
+
+    .data,
+    .weather {
+        float: none;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
     }
 }

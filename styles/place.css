@@ -15,12 +15,12 @@
     --subtitle-font-size: 1.2rem;
     --footer-font-size: 0.8rem;
     --footer-height: 50px;
-    --data-bg-color: #0033A0;
-    /* Blue (Ecuador flag) */
+    --data-bg-color: rgba(0, 51, 160, 0.9);
+    /* Semi-transparent blue */
     --data-text-color: #FFD100;
     /* Yellow (Ecuador flag) */
-    --weather-bg-color: #CE1126;
-    /* Red (Ecuador flag) */
+    --weather-bg-color: rgba(206, 17, 38, 0.9);
+    /* Semi-transparent red */
     --weather-text-color: #fff;
     /* White */
     --font-family-heading: 'Times New Roman', serif;
@@ -31,14 +31,18 @@
     /* Semi-transparent black for overlays */
     --overlay-text-color: #fff;
     /* White text for contrast */
-    --footer-bg-color: #333;
-    /* Dark gray for footer */
+    --footer-bg-color: #222;
+    /* Darker footer background */
     --footer-text-color: #FFD100;
     /* Yellow for footer text */
     --title-gradient: linear-gradient(90deg, #FFD100, #0033A0, #CE1126);
     /* Ecuador flag colors */
     --title-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     /* Subtle shadow for title */
+    --title-color: #fff;
+    /* White for title */
+    --title-border-color: #FFD100;
+    /* Yellow border for title */
 }
 
 body {
@@ -46,7 +50,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background: url('../images/city.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -55,14 +59,13 @@ body {
 }
 
 header {
-    background: var(--title-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--title-color);
     font-size: 3rem;
     font-weight: bold;
     text-align: center;
-    text-shadow: var(--title-shadow);
-    margin: 1rem 0;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-bottom: 5px solid var(--title-border-color);
     font-family: 'Georgia', serif;
 }
 
@@ -107,27 +110,29 @@ header {
 }
 
 main {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: auto 1fr;
-    gap: 1rem;
-    padding: 1rem;
-    align-items: start;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    height: calc(100vh - var(--footer-height) - 4rem);
+    /* Adjust for header and footer */
 }
 
 .data {
-    background-color: var(--overlay-bg-color);
-    color: var(--overlay-text-color);
+    background-color: var(--data-bg-color);
+    color: var(--data-text-color);
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
     line-height: 1.8;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
+    width: 30%;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 5%;
 }
 
 .data h2 {
@@ -140,17 +145,19 @@ main {
 }
 
 .weather {
-    background-color: var(--overlay-bg-color);
-    color: var(--overlay-text-color);
+    background-color: var(--weather-bg-color);
+    color: var(--weather-text-color);
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     font-family: 'Arial', sans-serif;
     font-size: 1.2rem;
     line-height: 1.8;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
+    width: 30%;
+    text-align: left;
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
 }
 
 .weather h2 {
@@ -198,11 +205,13 @@ footer span {
         float: none;
         width: 90%;
         margin-bottom: 1rem;
+        position: static;
     }
 
     main {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
     }
 
     .data {

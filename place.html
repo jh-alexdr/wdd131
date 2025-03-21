@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuador</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jhon Tobar">
+    <meta name="author" content="Jhon A. Tobar">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ecuador</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/Cotopaxi.webp" media="(min-width: 768px)">
+                <img src="images/Cajas Parque Nacional Cuenca.webp" alt="Ecuador Landscape">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><strong>Area:</strong> 283,561 sq km</li>
+                <li><strong>Population:</strong> 17,643,054</li>
+                <li><strong>Capital:</strong> Quito</li>
+                <li><strong>Languages:</strong> Spanish</li>
+                <li><strong>Currency:</strong> US Dollar</li>
+                <li><strong>Time Zone:</strong> UTC-5</li>
+                <li><strong>Calling Code:</strong> +593</li>
+                <li><strong>Internet TLD:</strong> .ec</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <ul>
+                <li><strong>Temperature:</strong> 10 °C</li>
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+                <li><strong>Wind:</strong> 5 km/h</li>
+                <li><strong>Wind Chill:</strong> <span id="windChill">N/A</span></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> Ecuador</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

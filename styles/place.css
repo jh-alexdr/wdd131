@@ -14,6 +14,7 @@
     --title-font-size: 2.5rem;
     --subtitle-font-size: 1.2rem;
     --footer-font-size: 0.8rem;
+    --footer-height: 50px;
 }
 
 body {
@@ -22,6 +23,9 @@ body {
     padding: 0;
     color: var(--text-color);
     background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -37,6 +41,19 @@ header {
     width: 100%;
     height: auto;
     border-radius: var(--card-border-radius);
+    object-fit: cover;
+    filter: none;
+    /* Ensure no filters are applied */
+    image-rendering: auto;
+    /* Improve image clarity */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1rem;
 }
 
 .data,
@@ -49,16 +66,17 @@ header {
     box-shadow: var(--card-shadow);
     font-size: var(--subtitle-font-size);
     line-height: 1.5;
+    width: 40%;
+    /* Adjusted width for better alignment */
+    margin: 0;
 }
 
 .data {
     float: left;
-    width: 45%;
 }
 
 .weather {
     float: right;
-    width: 45%;
 }
 
 .weather h2 {
@@ -80,6 +98,12 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: var(--footer-height);
+    z-index: 10;
 }
 
 footer span {
@@ -102,8 +126,15 @@ footer span {
         margin-bottom: 1rem;
     }
 
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
     footer {
         flex-direction: column;
         text-align: center;
+        position: static;
+        /* Allow footer to flow naturally on smaller screens */
     }
 }

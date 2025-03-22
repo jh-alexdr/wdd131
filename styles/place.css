@@ -18,10 +18,11 @@ body {
 }
 
 header {
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    background: var(--accent-color);
     color: var(--background-color);
     text-align: center;
     padding: 1rem;
+    font-size: 1.5rem;
 }
 
 .hero {
@@ -60,10 +61,19 @@ main {
     flex: 1 1 45%;
     margin: 1rem;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 3px dashed var(--secondary-color);
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 3px solid var(--secondary-color);
     border-radius: 8px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.data h2,
+.weather h2 {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .gallery {
@@ -105,8 +115,9 @@ main {
 }
 
 footer {
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: var(--background-color);
     text-align: center;
     padding: 1rem;
+    font-size: 0.9rem;
 }

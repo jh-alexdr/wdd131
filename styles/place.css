@@ -1,7 +1,10 @@
 :root {
-    --primary-color: #FFD100; /* Yellow */
-    --secondary-color: #0033A0; /* Blue */
-    --accent-color: #CE1126; /* Red */
+    --primary-color: #FFD100;
+    /* Yellow */
+    --secondary-color: #0033A0;
+    /* Blue */
+    --accent-color: #CE1126;
+    /* Red */
     --text-color: #000;
     --background-color: #fff;
 }

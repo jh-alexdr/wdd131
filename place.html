@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecuador</title>
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Jhon Tobar">
-    <meta name="author" content="Jhon A. Tobar">
+    <title>Madagascar</title>
     <link rel="stylesheet" href="styles/place.css">
     <script src="scripts/place.js" defer></script>
 </head>
-
 <body>
     <header>
-        <h1>Ecuador</h1>
+        <h1>Madagascar</h1>
     </header>
     <main>
         <section class="hero">
             <picture>
-                <source srcset="images/Cotopaxi.webp" media="(min-width: 768px)">
-                <img src="images/Galápagos.webp" alt="Ecuador">
+                <source srcset="images/madagascar-large.webp" media="(min-width: 768px)">
+                <img src="images/madagascar-small.webp" alt="Madagascar scenery">
             </picture>
         </section>
         <section class="data">
             <h2>Data</h2>
             <ul>
-                <li><strong>Area:</strong> 283,561 sq km</li>
-                <li><strong>Population:</strong> 17,643,054</li>
-                <li><strong>Capital:</strong> Quito</li>
-                <li><strong>Languages:</strong> Spanish</li>
-                <li><strong>Currency:</strong> US Dollar</li>
-                <li><strong>Time Zone:</strong> UTC-5</li>
-                <li><strong>Calling Code:</strong> +593</li>
-                <li><strong>Internet TLD:</strong> .ec</li>
+                <li><strong>Area:</strong> 587,041 sq km</li>
+                <li><strong>Population:</strong> 27,691,018</li>
+                <li><strong>Capital:</strong> Antananarivo</li>
+                <li><strong>Languages:</strong> Malagasy, French</li>
+                <li><strong>Currency:</strong> Malagasy Ariary</li>
+                <li><strong>Time Zone:</strong> UTC+3</li>
+                <li><strong>Calling Code:</strong> +261</li>
+                <li><strong>Internet TLD:</strong> .mg</li>
             </ul>
         </section>
         <section class="weather">
@@ -46,9 +42,8 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 <span>👍</span> Jhon A. Tobar T. <span>👍</span> Quito, Ecuador</p>
-        <p>Last Modification: 03/21/2025 16:25:06</p>
+        <p>&copy; <span id="currentYear"></span> Rubia Magdalena Francesco • Madagascar</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
-
 </html>

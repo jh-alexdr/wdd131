@@ -79,8 +79,8 @@ header {
 .weather h2::after {
     content: " ⛅";
     /* Ensure content is defined */
-    font-size: 1rem;
-    /* Adjust size for better visibility */
+    font-size: 0.5rem;
+    /* Corrected decimal separator */
     color: var(--secondary-color);
     /* Match the design */
     position: absolute;

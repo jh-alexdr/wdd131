@@ -72,17 +72,24 @@ header {
     color: var(--text-color);
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    position: relative;
+    /* Required for ::after positioning */
 }
 
 .weather h2::after {
     content: " ⛅";
     /* Ensure content is defined */
-    font-size: 0, 5rem;
-    /* Adjust size if necessary */
+    font-size: 1rem;
+    /* Adjust size for better visibility */
     color: var(--secondary-color);
     /* Match the design */
-    margin-left: 0.5rem;
-    /* Add spacing */
+    position: absolute;
+    top: 50%;
+    /* Vertically align with the text */
+    right: -1.5rem;
+    /* Adjust spacing to the right of the text */
+    transform: translateY(-50%);
+    /* Center the icon vertically */
 }
 
 @media (min-width: 768px) {

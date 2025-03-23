@@ -6,7 +6,8 @@
     --accent-color: #CE1126;
     /* Red */
     --text-color: #000;
-    --background-color: #fff;
+    --background-color: #f4f4f9;
+    /* Light gray for a softer background */
     --footer-color: #333;
     /* Formal dark gray */
     --title-gradient: linear-gradient(90deg, #CE1126, #FFD100);
@@ -22,6 +23,7 @@ body {
     padding: 0;
     color: var(--text-color);
     background-color: var(--background-color);
+    /* Updated background color */
 }
 
 header {

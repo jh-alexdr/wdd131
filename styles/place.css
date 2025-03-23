@@ -74,6 +74,17 @@ header {
     margin-bottom: 1rem;
 }
 
+.weather h2::after {
+    content: " ⛅";
+    /* Ensure content is defined */
+    font-size: 0, 5rem;
+    /* Adjust size if necessary */
+    color: var(--secondary-color);
+    /* Match the design */
+    margin-left: 0.5rem;
+    /* Add spacing */
+}
+
 @media (min-width: 768px) {
     .hero {
         position: relative;

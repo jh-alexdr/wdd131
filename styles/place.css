@@ -9,14 +9,15 @@
     --background-color: #fff;
     --footer-color: #333;
     /* Formal dark gray */
-    --title-gradient: linear-gradient(90deg, #FFD100, #0033A0, #CE1126);
-    /* Ecuador flag colors */
+    --title-gradient: linear-gradient(90deg, #CE1126, #FFD100);
+    /* Red to Yellow */
     --card-background: #f0f8ff;
     /* Light blue for better readability */
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', Arial, sans-serif;
+    /* Updated to use the provided font */
     margin: 0;
     padding: 0;
     color: var(--text-color);
@@ -28,6 +29,8 @@ header {
     padding: 1rem;
     font-size: 2rem;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    /* Apply the provided font for the title */
     background-image: var(--title-gradient);
     -webkit-background-clip: text;
     background-clip: text;

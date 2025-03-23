@@ -45,11 +45,6 @@ header {
     display: block;
 }
 
-.overlay {
-    display: none;
-    /* Remove overlay positioning for mobile view */
-}
-
 .data,
 .weather {
     background-color: var(--card-background);
@@ -80,6 +75,11 @@ header {
 }
 
 @media (min-width: 768px) {
+    .hero {
+        position: relative;
+        margin-bottom: 0;
+    }
+
     .overlay {
         display: flex;
         position: absolute;
@@ -93,9 +93,20 @@ header {
         box-sizing: border-box;
     }
 
-    .data,
+    .data {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        width: 25%;
+        margin: 0;
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
     .weather {
-        position: static;
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
         width: 25%;
         margin: 0;
         font-size: 0.9rem;

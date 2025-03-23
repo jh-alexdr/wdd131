@@ -11,5 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("windChill").textContent = windChill;
 
     document.getElementById("currentYear").textContent = new Date().getFullYear();
-    document.getElementById("lastModified").textContent = document.lastModified;
+
+    const now = new Date();
+    const formattedDate = now.toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+    });
+    const formattedTime = now.toLocaleTimeString("en-US", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+    });
+    document.getElementById("lastModified").textContent = `${formattedDate} ${formattedTime}`;
 });

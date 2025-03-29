@@ -97,3 +97,22 @@ footer p {
         padding: 2rem;
     }
 }
+
+/* Adjust card size for mobile */
+.temple-card {
+    width: 100%;
+    max-width: 150px; /* Smaller card width for mobile */
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem; /* Reduce padding for mobile */
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem; /* Reduce margin for mobile */
+}

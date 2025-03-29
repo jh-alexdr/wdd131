@@ -35,6 +35,13 @@ nav ul li a {
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    color: #ffcc00;
+    /* Change text color on hover */
+    text-decoration: underline;
+    /* Add underline on hover */
+}
+
 main {
     padding: 2rem;
     text-align: center;

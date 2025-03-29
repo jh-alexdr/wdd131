@@ -82,37 +82,31 @@ footer p {
 }
 
 #temple-cards-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
-    gap: 1rem; /* Space between grid items */
+    display: flex;
+    flex-direction: column;
+    /* Single-column layout */
+    gap: 1rem;
+    /* Space between items */
     padding: 1rem;
-    justify-items: center; /* Center items horizontally */
+    align-items: center;
+    /* Center items horizontally */
 }
 
-/* Media query for larger screens (desktop) */
-@media (min-width: 768px) {
-    #temple-cards-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
-        gap: 1.5rem; /* Larger gap for desktop */
-        padding: 2rem;
-    }
-}
-
-/* Adjust card size for mobile */
 .temple-card {
     width: 100%;
-    max-width: 150px; /* Smaller card width for mobile */
+    max-width: 600px;
+    /* Limit the width of each card */
     text-align: center;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0.5rem; /* Reduce padding for mobile */
+    padding: 1rem;
 }
 
 .temple-card img {
     width: 100%;
     height: auto;
     border-radius: 5px;
-    margin-bottom: 0.5rem; /* Reduce margin for mobile */
+    margin-bottom: 1rem;
 }

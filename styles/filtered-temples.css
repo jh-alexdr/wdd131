@@ -109,6 +109,15 @@ footer p {
     height: auto;
     border-radius: 5px;
     margin-bottom: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+.temple-card img:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the image */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect */
 }
 
 /* Hide the menu toggle button by default */
@@ -167,5 +176,10 @@ footer p {
     #main-nav.active {
         display: flex;
         /* Show the menu when active */
+    }
+
+    .temple-card {
+        margin-bottom: 1rem;
+        /* Add spacing between cards */
     }
 }

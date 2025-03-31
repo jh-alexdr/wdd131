@@ -72,19 +72,19 @@ footer {
 }
 
 #temple-cards-container {
-    display: flex;
-    flex-direction: column;
-    /* Single-column layout */
-    gap: 1rem;
-    /* Space between items */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for desktop */
+    gap: 1.5rem;
+    /* Space between grid items */
     padding: 2rem;
-    align-items: center;
+    justify-items: center;
     /* Center items horizontally */
 }
 
 .temple-card {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     /* Limit the width of each card */
     text-align: center;
     background-color: #fff;

@@ -110,3 +110,62 @@ footer p {
     border-radius: 5px;
     margin-bottom: 1rem;
 }
+
+/* Hide the menu toggle button by default */
+#menu-toggle {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    #menu-toggle {
+        display: block;
+        /* Show the toggle button */
+    }
+
+    #main-nav {
+        display: none;
+        /* Hide the navigation menu by default */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    #main-nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    #main-nav ul li {
+        margin: 0;
+        text-align: center;
+    }
+
+    #main-nav ul li a {
+        display: block;
+        padding: 1rem;
+        color: #fff;
+        text-decoration: none;
+        border-bottom: 1px solid #444;
+    }
+
+    #main-nav ul li a:hover {
+        background-color: #444;
+    }
+
+    #main-nav.active {
+        display: flex;
+        /* Show the menu when active */
+    }
+}

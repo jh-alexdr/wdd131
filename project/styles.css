@@ -1,0 +1,50 @@
+/* General styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fc;
+    color: #4a4a4a;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    color: #1a535c;
+    font-family: 'Merriweather', serif;
+}
+
+/* Links */
+a {
+    color: #1a535c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Layout descriptions */
+.layout-description {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d6d9db;
+    border-left: 5px solid #646060;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.margin-top {
+    margin-top: 20px;
+}

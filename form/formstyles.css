@@ -1,0 +1,102 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f0f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #4a154b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main content */
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #e8e3eb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form elements */
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4a154b;
+}
+
+form select,
+form input[type="date"],
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #4a154b;
+    margin-bottom: 10px;
+}
+
+label input[type="radio"],
+label input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Submit button */
+form input[type="submit"] {
+    background-color: #4a154b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #3a103b;
+}
+
+/* Footer */
+footer {
+    background-color: #4a154b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 5px 0;
+}

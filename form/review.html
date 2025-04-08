@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="./formstyles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    <main>
+        <p>Your review has been submitted successfully.</p>
+        <p>Total Reviews Submitted: <span id="review-counter"></span></p>
+    </main>
+    <footer>
+        <p>&copy;2025👍 Jhon A. Tobar T. 👍 Quito, Ecuador</p>
+        <p>Last Modification: <span id="last-modification"></span></p>
+    </footer>
+    <script>
+        // Increment review counter
+        const reviewCounterKey = 'reviewCounter';
+        let reviewCount = localStorage.getItem(reviewCounterKey) || 0;
+        reviewCount++;
+        localStorage.setItem(reviewCounterKey, reviewCount);
+        document.getElementById('review-counter').textContent = reviewCount;
+
+        // Display last modification date
+        document.getElementById('last-modification').textContent = document.lastModified;
+    </script>
+</body>
+
+</html>

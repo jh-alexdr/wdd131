@@ -3,14 +3,18 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3f0f5;
-    color: #333;
+    background-color: #eaf7f7;
+    /* Light teal background */
+    color: #2c3e50;
+    /* Dark blue-gray text */
 }
 
 /* Header */
 header {
-    background-color: #4a154b;
-    color: #fff;
+    background-color: #34495e;
+    /* Dark slate blue */
+    color: #ecf0f1;
+    /* Light gray */
     text-align: center;
     padding: 20px 0;
 }
@@ -24,7 +28,8 @@ header h1 {
 main {
     max-width: 600px;
     margin: 20px auto;
-    background-color: #e8e3eb;
+    background-color: #ffffff;
+    /* White background for the form */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -35,7 +40,8 @@ form label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #4a154b;
+    color: #34495e;
+    /* Dark slate blue */
 }
 
 form select,
@@ -45,7 +51,8 @@ form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #bdc3c7;
+    /* Light gray border */
     border-radius: 4px;
     font-size: 1rem;
 }
@@ -62,7 +69,8 @@ fieldset {
 
 legend {
     font-weight: bold;
-    color: #4a154b;
+    color: #34495e;
+    /* Dark slate blue */
     margin-bottom: 10px;
 }
 
@@ -73,8 +81,10 @@ label input[type="checkbox"] {
 
 /* Submit button */
 form input[type="submit"] {
-    background-color: #4a154b;
-    color: #fff;
+    background-color: #16a085;
+    /* Teal */
+    color: #ffffff;
+    /* White text */
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -84,13 +94,16 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background-color: #3a103b;
+    background-color: #138d75;
+    /* Darker teal */
 }
 
 /* Footer */
 footer {
-    background-color: #4a154b;
-    color: #fff;
+    background-color: #34495e;
+    /* Dark slate blue */
+    color: #ecf0f1;
+    /* Light gray */
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;

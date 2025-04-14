@@ -1030,3 +1030,70 @@ body {
 .contact-form button:hover {
     background-color: #1565c0;
 }
+
+/* Features Heading */
+.features-heading {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #333;
+    /* Ajusta el color para que combine con el diseño */
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    /* Espacio entre las imágenes */
+    padding: 2rem 0;
+    flex-wrap: wrap;
+    /* Permite que las imágenes se ajusten en pantallas pequeñas */
+}
+
+.feature img {
+    max-width: 300px;
+    /* Tamaño normal para las imágenes */
+    height: auto;
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra sutil */
+    transition: transform 0.3s ease;
+    /* Efecto al pasar el cursor */
+}
+
+.feature img:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño al pasar el cursor */
+}
+
+/* Header Logo */
+.logo img {
+    max-width: 150px;
+    /* Tamaño proporcional del logo */
+    height: auto;
+    margin-left: 1rem;
+    /* Espaciado a la izquierda */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        /* Apila las imágenes en pantallas pequeñas */
+        gap: 1.5rem;
+    }
+
+    .feature img {
+        max-width: 90%;
+        /* Ajusta el tamaño de las imágenes en pantallas pequeñas */
+    }
+
+    .logo img {
+        max-width: 120px;
+        /* Reduce el tamaño del logo en pantallas pequeñas */
+    }
+}

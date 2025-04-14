@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - English Learning Website</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="page-title">
+        <h1>Contact Us</h1>
+    </div>
+    <header class="header">
+        <div class="logo">
+            <img src="images/Logo.jpg" alt="Website Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="interactive.html">Interactive</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>We'd Love to Hear From You!</h2>
+        <p>If you have any questions or feedback, feel free to reach out to us using the form below.</p>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy;2025 👍 Jhon A. Tobar T. 👍 Quito, Ecuador</p>
+        <p>Last Modification: <span id="last-modification"></span></p>
+    </footer>
+    <script>
+        document.getElementById('last-modification').textContent = document.lastModified;
+        </script>
+</body>
+
+</html>

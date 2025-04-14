@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lessons - English Learning Website</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <div class="page-title">
+        <h1>Lessons</h1>
+    </div>
+    <header class="header">
+        <div class="logo">
+            <img src="images/Logo.jpg" alt="Website Logo">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">Lessons</a></li>
+                <li><a href="interactive.html">Interactive</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="lessons">
+        <h2>Explore Our Lessons</h2>
+        <div class="lesson-list">
+            <div class="lesson">
+                <h3>Lesson 1: Basic Grammar</h3>
+                <p>Learn the fundamentals of English grammar, including sentence structure and common rules.</p>
+                <a href="worksheets/grammar-basics.pdf" class="btn" download>Start Lesson</a>
+            </div>
+            <div class="lesson">
+                <h3>Lesson 2: Vocabulary Building</h3>
+                <p>Expand your vocabulary with essential words and phrases for everyday use.</p>
+                <a href="worksheets/vocabulary-builder.pdf" class="btn" download>Start Lesson</a>
+            </div>
+            <div class="lesson">
+                <h3>Lesson 3: Pronunciation Tips</h3>
+                <p>Improve your pronunciation with tips and audio examples to sound more natural.</p>
+                <a href="worksheets/pronunciation-guide.pdf" class="btn" download>Start Lesson</a>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>&copy;2025 👍 Jhon A. Tobar T. 👍 Quito, Ecuador</p>
+        <p>Last Modification: <span id="last-modification"></span></p>
+    </footer>
+    <script>
+        document.getElementById('last-modification').textContent = document.lastModified;
+    </script>
+    </body>
+</body>
+
+</html>
